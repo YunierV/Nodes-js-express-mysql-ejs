@@ -1,0 +1,22 @@
+-CRUD nodejs:
+https://github.com/carpaiz/nodjs_crud
+
+----comentarios package.json
+"comentariotemp":"esto es un comentario para saber que el type module es algo nuevo que agregue para el ejs",
+  "type": "module",
+  "scripts": {
+    "comentariotemp":"comentario-el ej es como lo que se ejecuta con el nodemon servidor u express",
+    "ej": "nodemon EJS/index.js" --podriamos correro con nede en vez de nodemon pero el node no te guarda o se queda con los cambio y hay que ejecutarlo a cada rato y el nodemon si te detecta los cambios
+"comentariotemp":"esto es un comentario para saber que el type module es algo nuevo que agregue para el ejs para que funcione el (import express from 'express') pero deja de funcionar el (const express = require('express')) para que este  funcione se deja por defecto o se pone type commonjs",
+  "type modificado para que deje de funcionar": "module",
+  ----comentarios package.json
+
+-npm init: se crea un package.jsons donde se intalan todos los paquetes-si no hay paquetes se muestra un paquete de configuracion inicial.
+
+-express: es un entorno de trabajo para aplicaciones web.
+
+-nodemon: servidor web que ejecuta la pagina.
+
+-ejs: es un motor de plantillas para las vistas.
+
+-mysql: base de datos

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <%- include('../general/cabezera.ejs') %>
+    <title>Clientes</title>
+</head> 
+<body> 
+    <h2>Mostrar</h2>
+    <table class="border border-primary">
+        <thead class="border border-primary">
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Numero de Documento</th>
+        </thead>
+        <tbody>
+            <% resultado.forEach((cliente)=>{ %>
+            <tr>
+                <td><%= cliente.id %></td>
+                <td><%= cliente.nombreCli %></td>
+                <td><%= cliente.apellidoCli %></td>
+                <td><%= cliente.numeroDoc %></td>
+                <td>
+                    <a href="/editar/<%= cliente.id %>" class="btn btn-primary" >actualizar</a>
+                    <a href="/borrar/<%= cliente.id %>" class="btn btn-danger">borrar</a>
+                </td>
+            </tr>
+            <% })%>
+        </tbody>
+    </table>
+
+    <%- include('../general/pie.ejs') %>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>agregar</title>
+    <%- include('../general/cabezera.ejs') %>
+</head>
+<body>
+    <h2>agregar</h2>
+    <form action="/guardar" method="post">
+        <label for="txtnom">Nombre</label>
+        <input type="text" id="txtnom" name="txtnom">
+        <br>
+        <label for="txtape">Apellido</label>
+        <input type="text" id="txtape" name="txtape">
+        <br>
+        <label for="txtdoc">Numero de Documento</label>
+        <input type="number" id="txtdoc" name="txtdoc">
+        <br>
+        <button type="submit" id="btnagregar" name="btnagregar">Agregar</button>
+        <a href="/" type="button">cancelar</a>
+    </form>
+
+    <%- include('../general/pie.ejs') %>
+</body>
+</html>
